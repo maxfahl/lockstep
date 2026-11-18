@@ -1,0 +1,136 @@
+{
+  "click" : {
+    "division" : "beats",
+    "isOn" : false,
+    "sound" : "woodblock",
+    "subBeats" : "sixteenths",
+    "volume" : 0.7
+  },
+  "grid" : {
+    "anchors" : [
+
+    ],
+    "barStartNumber" : 0,
+    "beats" : [
+      {
+        "estimated" : false,
+        "number" : 0,
+        "time" : 0
+      },
+      {
+        "estimated" : false,
+        "number" : 1,
+        "time" : 0.5
+      },
+      {
+        "estimated" : false,
+        "number" : 2,
+        "time" : 1
+      },
+      {
+        "estimated" : false,
+        "number" : 3,
+        "time" : 1.5
+      }
+    ],
+    "tempoLevel" : "normal"
+  },
+  "recordings" : [
+    {
+      "delay" : 0.012,
+      "excludedMarkers" : [
+        4800
+      ],
+      "file" : "takes/00000000-0000-0000-0000-000000000001.wav",
+      "id" : "00000000-0000-0000-0000-000000000001",
+      "lengthSamples" : 480000,
+      "rawStart" : 1.5
+    }
+  ],
+  "resolve" : {
+    "frameRate" : "25",
+    "timelineStart" : "01:00:00:00"
+  },
+  "songFile" : "song.wav",
+  "songGainDb" : 0,
+  "songLengthSamples" : 960000,
+  "songName" : "Song",
+  "songPlace" : {
+    "cutEndSamples" : 0,
+    "cutStartSamples" : 0,
+    "zeroSample" : 0
+  },
+  "tracks" : [
+    {
+      "clips" : [
+        {
+          "feel" : "triplets",
+          "gainDb" : 2,
+          "id" : "00000000-0000-0000-0000-000000000010",
+          "isActiveTake" : true,
+          "line" : "00000000-0000-0000-0000-000000000020",
+          "muted" : false,
+          "name" : "Verse",
+          "normalizeGainDb" : -3.25,
+          "recordPlace" : 1.5,
+          "segments" : [
+            {
+              "gainDb" : 0,
+              "inSample" : 0,
+              "offsetSamples" : 0,
+              "outSample" : 96000,
+              "recordingID" : "00000000-0000-0000-0000-000000000001"
+            },
+            {
+              "gainDb" : -1.5,
+              "inSample" : 120000,
+              "offsetSamples" : -2400,
+              "outSample" : 200000,
+              "recordingID" : "00000000-0000-0000-0000-000000000001"
+            }
+          ],
+          "strength" : 0.5,
+          "stretch" : true,
+          "text" : "one two three",
+          "tighten" : "lines",
+          "tightenWhenOn" : "lines"
+        },
+        {
+          "feel" : "sixteenths",
+          "gainDb" : 0,
+          "id" : "00000000-0000-0000-0000-000000000011",
+          "isActiveTake" : false,
+          "line" : "00000000-0000-0000-0000-000000000020",
+          "muted" : true,
+          "segments" : [
+            {
+              "gainDb" : 0,
+              "inSample" : 240000,
+              "offsetSamples" : 0,
+              "outSample" : 336000,
+              "recordingID" : "00000000-0000-0000-0000-000000000001"
+            }
+          ],
+          "strength" : 1,
+          "stretch" : false,
+          "tighten" : "off",
+          "tightenWhenOn" : "all"
+        }
+      ],
+      "gainDb" : -4,
+      "id" : "00000000-0000-0000-0000-000000000030",
+      "muted" : false,
+      "name" : "Track 1"
+    },
+    {
+      "clips" : [
+
+      ],
+      "gainDb" : 0,
+      "id" : "00000000-0000-0000-0000-000000000031",
+      "muted" : true,
+      "name" : "Track 2"
+    }
+  ],
+  "version" : 1
+}

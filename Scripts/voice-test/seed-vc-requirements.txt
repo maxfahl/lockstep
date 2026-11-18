@@ -1,0 +1,22 @@
+# The packages Seed-VC's conversion needs on this Mac, and nothing else, for Scripts/voice-test/seed-vc-setup.sh.
+# Python 3.10 (uv's cpython-3.10.20-macos-aarch64-none). These are the packages named by hand. Everything
+# they bring with them is pinned in seed-vc-requirements.lock, which is what was really installed.
+#
+# Left out of Seed-VC's own requirements-mac.txt, because the conversion never touches them: gradio,
+# FreeSimpleGUI, sounddevice, funasr, modelscope, resemblyzer, jiwer, pydub, accelerate, hydra-core,
+# python-dotenv, torchvision. Also left out: descript-audio-codec and matplotlib, which Seed-VC imports
+# but never uses in a conversion (seed-vc-render.py says how it gets by without them).
+
+torch==2.6.0
+torchaudio==2.6.0
+numpy==1.26.4
+scipy==1.13.1
+librosa==0.10.2
+soundfile==0.12.1
+soxr==0.5.0.post1
+munch==4.0.0
+einops==0.8.0
+transformers==4.46.3
+huggingface-hub==0.26.5
+pyyaml==6.0.2
+tqdm==4.67.1

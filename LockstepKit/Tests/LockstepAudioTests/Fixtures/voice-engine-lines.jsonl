@@ -1,0 +1,8 @@
+{"device":"mps","engine":"seed-vc","event":"ready","loadSeconds":14.2,"protocol":1,"revision":1}
+{"engine":"seed-vc","job":"A3F9D1C0-5B7E-4E2A-9C48-0D6B1F2E7A35","op":"convert","output":"/Projects/Låten.lockstep/cache/voices/seed-vc-r1-4f2a9c1e/d+06p-1.5/1B0E7C52-93A4-4D6F-8E21-5C7A9D3F0B64.A3F9D1C0-5B7E-4E2A-9C48-0D6B1F2E7A35.partial","pitch":-1.5,"reference":"/Voices/references/4F2A9C1E-6D3B-4A7F-9E05-B1C8D2E3F4A6/d+06p-1.5.wav","revision":1,"source":"/Projects/Låten.lockstep/takes/1B0E7C52-93A4-4D6F-8E21-5C7A9D3F0B64.wav"}
+{"event":"progress","fraction":0.42,"job":"A3F9D1C0-5B7E-4E2A-9C48-0D6B1F2E7A35"}
+{"event":"done","job":"A3F9D1C0-5B7E-4E2A-9C48-0D6B1F2E7A35","samples":153600,"seconds":7.9}
+{"event":"failed","job":"C7E2A9B4-1D3F-4A6C-8B50-9E4F6A1D2C83","reason":"the source could not be read"}
+{"job":"E5B8C1D7-2A4F-4C9E-B631-7F0A3D5C9E12","op":"cancel"}
+{"event":"cancelled","job":"E5B8C1D7-2A4F-4C9E-B631-7F0A3D5C9E12"}
+{"op":"quit"}

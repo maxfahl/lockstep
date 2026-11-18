@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager and Xcode build output
+.build/
+.swiftpm/
+DerivedData/
+build/
+
+# Xcode state that belongs to one user
+xcuserdata/
+*.xcuserstate
+
+# The beat model is installed outside the repository; never commit a converted copy
+Models/*.mlpackage
+Models/*.mlmodelc
+
+# Lockstep's own project packages, if one is saved inside this folder
+*.lockstep
+
+# A developer's own signing team (see Config/Signing.xcconfig)
+Config/Signing.local.xcconfig

@@ -1,0 +1,104 @@
+name: Lockstep
+options:
+  bundleIdPrefix: se.maxfahl
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+packages:
+  LockstepKit:
+    path: LockstepKit
+  # Speech to text with whisper.cpp, which SwiftPM downloads as a prebuilt framework. Only the
+  # Lockstep app links it: the design lab and LockstepKit's own tests build without it.
+  LockstepSpeechKit:
+    path: LockstepSpeechKit
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ARCHS: arm64
+targets:
+  Lockstep:
+    type: application
+    # Signs to run locally, or with a team named in the ignored Config/Signing.local.xcconfig.
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    platform: macOS
+    sources:
+      - path: Lockstep
+        type: syncedFolder
+      # The app icon. A synced folder alone gives the target no Resources phase, so the
+      # asset catalog is named here too, which makes XcodeGen add that phase.
+      - path: Lockstep/Resources/Assets.xcassets
+        buildPhase: resources
+    dependencies:
+      - package: LockstepKit
+        product: LockstepCore
+      - package: LockstepKit
+        product: LockstepAudio
+      - package: LockstepKit
+        product: LockstepUI
+      - package: LockstepSpeechKit
+        product: LockstepSpeech
+    settings:
+      base:
+        PRODUCT_NAME: Lockstep
+        PRODUCT_BUNDLE_IDENTIFIER: se.maxfahl.lockstep
+        GENERATE_INFOPLIST_FILE: YES
+        # Xcode still makes the usual keys. This file adds the ones it cannot make:
+        # the ".lockstep" project type, so Finder shows a project folder as one file.
+        INFOPLIST_FILE: Lockstep/Resources/Info.plist
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Lockstep records your voice over the song.
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        # The line the About window shows.
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later."
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_HARDENED_RUNTIME: NO
+  LockstepDesign:
+    type: application
+    # Signs to run locally, or with a team named in the ignored Config/Signing.local.xcconfig.
+    configFiles:
+      Debug: Config/Signing.xcconfig
+      Release: Config/Signing.xcconfig
+    platform: macOS
+    sources:
+      - path: LockstepDesign
+        type: syncedFolder
+    dependencies:
+      - package: LockstepKit
+        product: LockstepCore
+      - package: LockstepKit
+        product: LockstepUI
+    settings:
+      base:
+        PRODUCT_NAME: Lockstep Design
+        PRODUCT_BUNDLE_IDENTIFIER: se.maxfahl.lockstep.design
+        GENERATE_INFOPLIST_FILE: YES
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        # The line the About window shows.
+        INFOPLIST_KEY_NSHumanReadableCopyright: "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later."
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_APP_SANDBOX: NO
+        ENABLE_HARDENED_RUNTIME: NO
+schemes:
+  Lockstep:
+    build:
+      targets:
+        Lockstep: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+      targets:
+        - package: LockstepKit/LockstepCoreTests
+        - package: LockstepKit/LockstepAudioTests
+        - package: LockstepSpeechKit/LockstepSpeechTests
+  LockstepDesign:
+    build:
+      targets:
+        LockstepDesign: all
+    run:
+      config: Debug

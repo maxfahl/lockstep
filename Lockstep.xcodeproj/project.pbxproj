@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B508DA8B1034DD78C7F00F9 /* LockstepSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 43B62E7DDA9E6BC162407D8B /* LockstepSpeech */; };
+		2830E002713684B9EC2052F7 /* LockstepCore in Frameworks */ = {isa = PBXBuildFile; productRef = 322C99AC531F4371228FAD60 /* LockstepCore */; };
+		328A6EAE34E9FDEDEFA8466D /* LockstepUI in Frameworks */ = {isa = PBXBuildFile; productRef = 22D2D01524474239A89D1672 /* LockstepUI */; };
+		6E8369EA880F902EE954B398 /* LockstepCore in Frameworks */ = {isa = PBXBuildFile; productRef = D1CA322EA9DF5BB9D31AF848 /* LockstepCore */; };
+		83A5CE9AB0950F8EB1E2D2DB /* LockstepUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3D9686AEB96A78BF46117423 /* LockstepUI */; };
+		AB72795DA0C8A641FA5CBC99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79303AE429AAFD3D6A30D8CC /* Assets.xcassets */; };
+		ECD74A86EF28AE755804ED2F /* LockstepAudio in Frameworks */ = {isa = PBXBuildFile; productRef = 5BBEC308CBE23FFFA4CC4162 /* LockstepAudio */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02EAD956AAC24C07BCB33316 /* LockstepDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LockstepDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		65BCC06724AED99EB077BD0D /* Lockstep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lockstep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6615F83785F2C6B79CEAF71C /* LockstepKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LockstepKit; path = LockstepKit; sourceTree = SOURCE_ROOT; };
+		6AD736C4A5331FD178CE6C7D /* LockstepSpeechKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LockstepSpeechKit; path = LockstepSpeechKit; sourceTree = SOURCE_ROOT; };
+		79303AE429AAFD3D6A30D8CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B5F53629F9C0C73C322B778 /* LockstepDesign */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = LockstepDesign;
+			sourceTree = "<group>";
+		};
+		BE2D8A7FC6B2B5C98D1D0CDF /* Lockstep */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			explicitFileTypes = {
+			};
+			explicitFolders = (
+			);
+			path = Lockstep;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91B2E94C55D402E9BFBF82CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2830E002713684B9EC2052F7 /* LockstepCore in Frameworks */,
+				328A6EAE34E9FDEDEFA8466D /* LockstepUI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A65FF7AC906AB105ABBE2670 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E8369EA880F902EE954B398 /* LockstepCore in Frameworks */,
+				ECD74A86EF28AE755804ED2F /* LockstepAudio in Frameworks */,
+				83A5CE9AB0950F8EB1E2D2DB /* LockstepUI in Frameworks */,
+				0B508DA8B1034DD78C7F00F9 /* LockstepSpeech in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E747C4E16987A806BE8AA0F /* Lockstep */ = {
+			isa = PBXGroup;
+			children = (
+				EDBB7897E3CBF3235457BE3F /* Resources */,
+			);
+			path = Lockstep;
+			sourceTree = "<group>";
+		};
+		D31C55ADA7FDEF4F9F6DF52B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6615F83785F2C6B79CEAF71C /* LockstepKit */,
+				6AD736C4A5331FD178CE6C7D /* LockstepSpeechKit */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		EDBB7897E3CBF3235457BE3F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79303AE429AAFD3D6A30D8CC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F167FB7D25AACAA671E61018 = {
+			isa = PBXGroup;
+			children = (
+				BE2D8A7FC6B2B5C98D1D0CDF /* Lockstep */,
+				7B5F53629F9C0C73C322B778 /* LockstepDesign */,
+				F882533C6F52A5859283C88F /* Config */,
+				7E747C4E16987A806BE8AA0F /* Lockstep */,
+				D31C55ADA7FDEF4F9F6DF52B /* Packages */,
+				F9E120CEF7B51A570AA01918 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F882533C6F52A5859283C88F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F9E120CEF7B51A570AA01918 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65BCC06724AED99EB077BD0D /* Lockstep.app */,
+				02EAD956AAC24C07BCB33316 /* LockstepDesign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A33CA80C3EC89F0B383E7BC /* LockstepDesign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58D98D4FFE816E34DD2EFFAD /* Build configuration list for PBXNativeTarget "LockstepDesign" */;
+			buildPhases = (
+				76861DA853ADE2BFFE1B2605 /* Sources */,
+				91B2E94C55D402E9BFBF82CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B5F53629F9C0C73C322B778 /* LockstepDesign */,
+			);
+			name = LockstepDesign;
+			packageProductDependencies = (
+				322C99AC531F4371228FAD60 /* LockstepCore */,
+				22D2D01524474239A89D1672 /* LockstepUI */,
+			);
+			productName = LockstepDesign;
+			productReference = 02EAD956AAC24C07BCB33316 /* LockstepDesign.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC5CE3585DD852B867574E2 /* Lockstep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F665E93DFF60EE8A3207BF8E /* Build configuration list for PBXNativeTarget "Lockstep" */;
+			buildPhases = (
+				831763F9E0F33B0B907935A2 /* Sources */,
+				B0009F70E269EE19740DA20A /* Resources */,
+				A65FF7AC906AB105ABBE2670 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BE2D8A7FC6B2B5C98D1D0CDF /* Lockstep */,
+			);
+			name = Lockstep;
+			packageProductDependencies = (
+				D1CA322EA9DF5BB9D31AF848 /* LockstepCore */,
+				5BBEC308CBE23FFFA4CC4162 /* LockstepAudio */,
+				3D9686AEB96A78BF46117423 /* LockstepUI */,
+				43B62E7DDA9E6BC162407D8B /* LockstepSpeech */,
+			);
+			productName = Lockstep;
+			productReference = 65BCC06724AED99EB077BD0D /* Lockstep.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F54D09745A4C31D4B8C212F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5A33CA80C3EC89F0B383E7BC = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					CEC5CE3585DD852B867574E2 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2B62E028E0E38CA461DF10AA /* Build configuration list for PBXProject "Lockstep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F167FB7D25AACAA671E61018;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C091918099A8507BA15D6B35 /* XCLocalSwiftPackageReference "LockstepKit" */,
+				4DEBD3A489F7879B9BB433E6 /* XCLocalSwiftPackageReference "LockstepSpeechKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC5CE3585DD852B867574E2 /* Lockstep */,
+				5A33CA80C3EC89F0B383E7BC /* LockstepDesign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0009F70E269EE19740DA20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB72795DA0C8A641FA5CBC99 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76861DA853ADE2BFFE1B2605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831763F9E0F33B0B907935A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		55FE259CC2A0F378BA71842B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		769C19B367E046776BC73E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lockstep/Resources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lockstep records your voice over the song.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = se.maxfahl.lockstep;
+				PRODUCT_NAME = Lockstep;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B92B8E5B27EC483D1BA34ED9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D191083B5FDC684A71B6FC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = se.maxfahl.lockstep.design;
+				PRODUCT_NAME = "Lockstep Design";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E1BF3E920D818FF2CD8394C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = se.maxfahl.lockstep.design;
+				PRODUCT_NAME = "Lockstep Design";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E38DC995DFBC19C7C13EFAA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AC5165183ED8ACCA5F81D34 /* Signing.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Lockstep/Resources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 Max Fahl. Free software under the GNU GPL, version 3 or later.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Lockstep records your voice over the song.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = se.maxfahl.lockstep;
+				PRODUCT_NAME = Lockstep;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B62E028E0E38CA461DF10AA /* Build configuration list for PBXProject "Lockstep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FE259CC2A0F378BA71842B /* Debug */,
+				B92B8E5B27EC483D1BA34ED9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58D98D4FFE816E34DD2EFFAD /* Build configuration list for PBXNativeTarget "LockstepDesign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1BF3E920D818FF2CD8394C5 /* Debug */,
+				D191083B5FDC684A71B6FC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F665E93DFF60EE8A3207BF8E /* Build configuration list for PBXNativeTarget "Lockstep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				769C19B367E046776BC73E0B /* Debug */,
+				E38DC995DFBC19C7C13EFAA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4DEBD3A489F7879B9BB433E6 /* XCLocalSwiftPackageReference "LockstepSpeechKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LockstepSpeechKit;
+		};
+		C091918099A8507BA15D6B35 /* XCLocalSwiftPackageReference "LockstepKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LockstepKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		22D2D01524474239A89D1672 /* LockstepUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepUI;
+		};
+		322C99AC531F4371228FAD60 /* LockstepCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepCore;
+		};
+		3D9686AEB96A78BF46117423 /* LockstepUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepUI;
+		};
+		43B62E7DDA9E6BC162407D8B /* LockstepSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepSpeech;
+		};
+		5BBEC308CBE23FFFA4CC4162 /* LockstepAudio */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepAudio;
+		};
+		D1CA322EA9DF5BB9D31AF848 /* LockstepCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LockstepCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F54D09745A4C31D4B8C212F7 /* Project object */;
+}

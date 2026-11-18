@@ -1,0 +1,20 @@
+;; A sealed run of Seed-VC for phase 37's test: the network refused, and nothing written anywhere but the
+;; engine folder and the folder of the answers. It shows that a conversion needs no network and writes
+;; nothing outside, as the voice engine promises.
+;;
+;;   sandbox-exec -D ENGINE=<engine folder> -D OUT=<answers folder> -f Scripts/voice-test/seed-vc-sealed.sb \
+;;       Scripts/voice-test/seed-vc-run.sh --jobs <jobs.json> --report <OUT>/report.json
+;;
+;; A write that is refused fails in the program and is noted by the system's sandbox in the Mac's log
+;; (`log show --predicate 'eventMessage CONTAINS "deny"'`), so every place it tried to write is seen.
+;; Reading stays allowed: the run needs the system's libraries and the Metal framework.
+(version 1)
+(allow default)
+(deny network*)
+(deny file-write*)
+(allow file-write*
+    (subpath (param "ENGINE"))
+    (subpath (param "OUT"))
+    (literal "/dev/null")
+    (literal "/dev/tty")
+    (regex #"^/dev/fd/"))
